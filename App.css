@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+  color: white;
+  background: #0f172a;
+  min-height: 100vh;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  color: #38bdf8;
+  font-size: 2.5rem;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  background: #1e293b;
+  color: #38bdf8;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.square:hover {
+  background: #334155;
+}
+.winner {
+  margin-top: 20px;
+  transition: all 0.3s;
+}
+.winner.shrink {
+  transform: scale(0);
+}
+.winner-text {
+  font-size: 1.5rem;
+  color: #4ade80;
+}
+button {
+  background: #38bdf8;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+button:hover {
+  background: #0ea5e9;
+}
+.info-container {
+  margin-top: 30px;
+  color: #cbd5e1;
+  font-size: 1rem;
+}
+.players {
+  display: flex;
+  justify-content: center;
+  gap: 60px; 
+  margin-bottom: 20px;
+}
+.players h2 {
+  font-size: 1.5rem;
+  color: #38bdf8; 
+}
+.info p {
+  margin: 5px;
+  font-size: 1.1rem;
+  color: #94a3b8; 
+}
+
